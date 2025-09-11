@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christian Keith P. Loreto - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+<body class="bg-gradient-to-b from-gray-900 to-gray-700 text-white min-h-screen font-sans">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-gray-800 bg-opacity-90 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold">Christian Keith</div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#home" class="nav-link hover:text-indigo-400 transition">Home</a>
+                <a href="#about" class="nav-link hover:text-indigo-400 transition">About</a>
+                <a href="#experience" class="nav-link hover:text-indigo-400 transition">Experience</a>
+                <a href="#skills" class="nav-link hover:text-indigo-400 transition">Skills</a>
+                <a href="#contact" class="nav-link hover:text-indigo-400 transition">Contact</a>
+            </div>
+            <button id="menu-btn" class="md:hidden focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800 bg-opacity-95">
+            <a href="#home" class="mobile-link block px-4 py-2 hover:bg-indigo-600">Home</a>
+            <a href="#about" class="mobile-link block px-4 py-2 hover:bg-indigo-600">About</a>
+            <a href="#experience" class="mobile-link block px-4 py-2 hover:bg-indigo-600">Experience</a>
+            <a href="#skills" class="mobile-link block px-4 py-2 hover:bg-indigo-600">Skills</a>
+            <a href="#contact" class="mobile-link block px-4 py-2 hover:bg-indigo-600">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center">
+        <div class="text-center">
+            <h1 class="text-5xl md:text-7xl font-bold mb-4 animate-fade-in">Christian Keith P. Loreto</h1>
+            <p class="text-xl md:text-2xl mb-6 animate-slide-up">SEO Specialist & Web Developer</p>
+            <a href="#contact" class="inline-block bg-indigo-600 px-6 py-3 rounded-full hover:bg-indigo-500 transition">Get in Touch</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 container mx-auto px-4">
+        <h2 class="text-4xl font-bold text-center mb-10 animate-slide-up">About Me</h2>
+        <div class="max-w-2xl mx-auto text-center">
+            <p class="text-lg animate-slide-up delay-1">I'm Christian Keith P. Loreto, a passionate SEO Specialist and Web Developer with a knack for creating engaging online experiences. With 2 years of experience in SEO and proficiency in modern web technologies, I strive to deliver impactful digital solutions.</p>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 bg-gray-800">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-10 animate-slide-up">Work Experience</h2>
+            <div class="max-w-3xl mx-auto">
+                <div class="bg-gray-900 p-6 rounded-lg shadow-lg animate-slide-up delay-1">
+                    <h3 class="text-2xl font-semibold">SEO Specialist</h3>
+                    <p class="text-lg">ALLWORD Company | 2023 - Present</p>
+                    <p class="text-lg">Under the leadership of CEO Aladin Legaspi, I optimized websites to improve search engine rankings, drove organic traffic, and implemented effective SEO strategies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 container mx-auto px-4">
+        <h2 class="text-4xl font-bold text-center mb-10 animate-slide-up">Skills</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl mx-auto">
+            <div class="bg-gray-900 p-6 rounded-lg shadow-lg animate-slide-up delay-1">
+                <h3 class="text-xl font-semibold">Web Development</h3>
+                <p>HTML, CSS, JavaScript, PHP, WordPress, GitHub</p>
+            </div>
+            <div class="bg-gray-900 p-6 rounded-lg shadow-lg animate-slide-up delay-2">
+                <h3 class="text-xl font-semibold">SEO</h3>
+                <p>Search Engine Optimization, Keyword Research, Analytics</p>
+            </div>
+            <div class="bg-gray-900 p-6 rounded-lg shadow-lg animate-slide-up delay-3">
+                <h3 class="text-xl font-semibold">Other Tools</h3>
+                <p>Microsoft Excel (Proficient)</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-800">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-10 animate-slide-up">Contact Me</h2>
+            <div class="max-w-xl mx-auto text-center">
+                <p class="text-lg animate-slide-up delay-1">Email: <a href="mailto:raichindesuma@gmail.com" class="underline hover:text-indigo-400">raichindesuma@gmail.com</a></p>
+                <p class="text-lg animate-slide-up delay-2">Phone: <a href="tel:+639619805064" class="underline hover:text-indigo-400">+639619805064</a></p>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
