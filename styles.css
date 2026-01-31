@@ -1,5 +1,7 @@
 /* Add to existing CSS */
-
+html {
+    scroll-behavior: smooth;
+}
 /* Navbar */
 .navbar {
     position: sticky;
