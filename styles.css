@@ -55,6 +55,14 @@ html {
 .nav-list li a:hover {
     color: #4caf50;
 }
+.contact-icons {
+    text-decoration: none;
+    color: #e0e0e0
+}
+.contact-icons a {
+    text-decoration: none;
+    color: #4caf50
+}
 
 /* Header styles */
 .header {
