@@ -3,98 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Christian Keith P. Loreto - Portfolio</title>
+    <title>Christian Keith P. Loreto - Portfolio Resume</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="nav">
+    <header class="header animate-fade-in">
         <div class="container">
-            <div class="nav-content">
-                <div class="logo">Christian Keith</div>
-                <div class="nav-links">
-                    <a href="#home" class="nav-link">Home</a>
-                    <a href="#about" class="nav-link">About</a>
-                    <a href="#experience" class="nav-link">Experience</a>
-                    <a href="#skills" class="nav-link">Skills</a>
-                    <a href="#contact" class="nav-link">Contact</a>
-                </div>
-                <button id="menu-btn" class="menu-btn">
-                    <svg class="menu-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-                    </svg>
-                </button>
-            </div>
-            <div id="mobile-menu" class="mobile-menu">
-                <a href="#home" class="mobile-link">Home</a>
-                <a href="#about" class="mobile-link">About</a>
-                <a href="#experience" class="mobile-link">Experience</a>
-                <a href="#skills" class="mobile-link">Skills</a>
-                <a href="#contact" class="mobile-link">Contact</a>
-            </div>
+            <h1>Christian Keith P. Loreto</h1>
+            <p>Paliwasan San Miguel, Bulacan</p>
+            <p>ianloreto274@gmail.com | 0961-980-5064</p>
         </div>
-    </nav>
+    </header>
 
-    <!-- Home Section -->
-    <section id="home" class="section hero">
+    <section id="objective" class="section animate-slide-up">
         <div class="container">
-            <h1 class="hero-title animate-fade-in">Christian Keith P. Loreto</h1>
-            <p class="hero-subtitle animate-slide-up">SEO Specialist & Web Developer</p>
-            <a href="#contact" class="btn animate-slide-up">Get in Touch</a>
+            <h2>Career Objective</h2>
+            <p>To build a long-term career as a Technical SEO Specialist where I can apply my experience in WordPress optimization, technical SEO, and website performance, while continuing to improve my skills, communication, and professional growth.</p>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="section">
+    <section id="skills" class="section animate-fade-in">
         <div class="container">
-            <h2 class="section-title animate-slide-up">About Me</h2>
-            <p class="section-text animate-slide-up delay-1">I'm Christian Keith P. Loreto, a passionate SEO Specialist and Web Developer with a knack for creating engaging online experiences. With 2 years of experience in SEO and proficiency in modern web technologies, I strive to deliver impactful digital solutions.</p>
+            <h2>Core Skills</h2>
+            <ul>
+                <li>Technical SEO and website audits</li>
+                <li>WordPress website optimization</li>
+                <li>On-page SEO fixes</li>
+                <li>Website Performance & Speed Optimization</li>
+                <li>HTML, CSS, JavaScript for basic to intermediate use</li>
+                <li>Basic Web development</li>
+                <li>Google search console & Google Analytics</li>
+                <li>MS Word, Excel, Google Sheets</li>
+                <li>Basic Computer Troubleshooting</li>
+            </ul>
         </div>
     </section>
 
-    <!-- Experience Section -->
-    <section id="experience" class="section section-dark">
+    <section id="experience" class="section animate-slide-up">
         <div class="container">
-            <h2 class="section-title animate-slide-up">Work Experience</h2>
-            <div class="card animate-slide-up delay-1">
-                <h3 class="card-title">SEO Specialist</h3>
-                <p class="card-subtitle">ALLWORD Company | 2023 - Present</p>
-                <p class="card-text">Under the leadership of CEO Aladin Legaspi, I optimized websites to improve search engine rankings, drove organic traffic, and implemented effective SEO strategies.</p>
-            </div>
+            <h2>Work Experience</h2>
+            <h3>Technical SEO Specialist at Allword (3 years)</h3>
+            <ul>
+                <li>Managed and optimized multiple WordPress websites, focusing on technical and on-page SEO improvements.</li>
+                <li>Monitored Google Search performance, site speed, indexing, and overall website health.</li>
+                <li>Conducted SEO audits, implemented technical fixes, and published optimized blogs and web pages.</li>
+                <li>Prepared weekly SEO performance reports using Google Sheets and supported off-site SEO through backlink creation and page indexing via Google Search Console.</li>
+            </ul>
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="section">
+    <section id="education" class="section animate-fade-in">
         <div class="container">
-            <h2 class="section-title animate-slide-up">Skills</h2>
-            <div class="skills-grid">
-                <div class="card animate-slide-up delay-1">
-                    <h3 class="card-title">Web Development</h3>
-                    <p class="card-text">HTML, CSS, JavaScript, PHP, WordPress, GitHub</p>
-                </div>
-                <div class="card animate-slide-up delay-2">
-                    <h3 class="card-title">SEO</h3>
-                    <p class="card-text">Search Engine Optimization, Keyword Research, Analytics</p>
-                </div>
-                <div class="card animate-slide-up delay-3">
-                    <h3 class="card-title">Other Tools</h3>
-                    <p class="card-text">Microsoft Excel (Proficient)</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section section-dark">
-        <div class="container">
-            <h2 class="section-title animate-slide-up">Contact Me</h2>
-            <div class="contact-info">
-                <p class="animate-slide-up delay-1">Email: <a href="mailto:raichindesuma@gmail.com" class="contact-link">raichindesuma@gmail.com</a></p>
-                <p class="animate-slide-up delay-2">Phone: <a href="tel:+639619805064" class="contact-link">+639619805064</a></p>
-            </div>
+            <h2>Education</h2>
+            <h3>BS INFORMATION TECHNOLOGY</h3>
+            <p>Bulacan Agricultural State College</p>
+            <p>2015 – 2020 Graduated</p>
         </div>
     </section>
 
