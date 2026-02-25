@@ -1,85 +1,252 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Technical SEO Specialist with 3+ years optimizing WordPress sites, speed, on-page SEO, audits & Google tools. View my portfolio.">
-    <meta name="keywords" content="Technical SEO, WordPress SEO, SEO Specialist, On-Page SEO, Website Speed Optimization, Google Search Console, SEO Audit, Bulacan">
-    <title>Technical SEO Specialist | Christian Loreto</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="canonical" href="https://ra1chin.github.io/Christian-Loreto/">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Technical SEO Specialist with 3+ years experience in WordPress optimization, site audits & performance. View my work.">
+  <meta name="keywords" content="technical seo, seo specialist, wordpress seo, on-page seo, website audit, seo optimization, google search console">
+  <title>Christian Keith P. Loreto | Portfolio</title>
+  
+  <!-- Google Fonts: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css"/>
 </head>
-<body>
-    <nav class="navbar">
-        <div class="container">
-            <ul class="nav-list">
-                <li><a href="#objective">Objective</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#education">Education</a></li>
-            </ul>
-        </div>
-    </nav>
+<body class="bg-black text-white font-poppins overflow-x-hidden">
 
-    <header class="header animate-fade-in">
-        <div class="container">
-            <h1>Christian Keith P. Loreto</h1>
-            <p>Paliwasan San Miguel, Bulacan</p>
-            <!-- Contact with icons -->
-            <div class="contact-icons">
-                <p><i class="fas fa-envelope"></i> <a href="mailto:ianloreto274@gmail.com">ianloreto274@gmail.com</a></p>
-                <p><i class="fas fa-phone"></i> 0961-980-5064</p>
-                <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/christian-keith-loreto-3315222a2/" target="_blank">My LinkedIn</a></p>
+  <!-- ================= HEADER ================= -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-black/90 backdrop-blur-md border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-5 md:px-8 lg:px-12 py-5 flex justify-between items-center">
+      <h1 class="text-3xl md:text-4xl font-bold tracking-tight">My Portfolio</h1>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center gap-10">
+        <a href="/" class="nav-link text-lg font-medium hover:text-gray-300 transition-colors">Home</a>
+        <a href="#skills" class="nav-link text-lg font-medium hover:text-gray-300 transition-colors">Skills</a>
+        <a href="#experience" class="nav-link text-lg font-medium hover:text-gray-300 transition-colors">Experience</a>
+        <a href="#achievements" class="nav-link text-lg font-medium hover:text-gray-300 transition-colors">Achievements</a>
+        <a href="#education" class="nav-link text-lg font-medium hover:text-gray-300 transition-colors">Education</a>
+      </nav>
+
+      <!-- Mobile Hamburger -->
+      <button id="menu-btn" class="md:hidden text-4xl focus:outline-none">
+        ☰
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-black border-t border-white/10 py-8">
+      <nav class="flex flex-col items-center gap-8 text-2xl">
+        <a href="#home" class="mobile-link">Home</a>
+        <a href="#skills" class="mobile-link">Skills</a>
+        <a href="#experience" class="mobile-link">Experience</a>
+        <a href="#achievements" class="mobile-link">Achievements</a>
+        <a href="#education" class="mobile-link">Education</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ================= MAIN CONTENT ================= -->
+
+  <main class="pt-24 md:pt-28">
+
+    <!-- HERO -->
+    <section id="home" class="section min-h-screen flex items-center py-16 md:py-24">
+      <div class="max-w-7xl mx-auto px-5 md:px-8 lg:px-12">
+        <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+          <div>
+            <h2 class="text-5xl sm:text-6xl lg:text-7xl font-bold leading-tight">
+              Christian Keith<br>P. Loreto
+            </h2>
+            <h3 class="text-3xl sm:text-4xl lg:text-5xl mt-4 font-medium text-gray-300">
+              Technical SEO Specialist
+            </h3>
+            <p class="mt-8 text-lg sm:text-xl lg:text-2xl text-gray-300 max-w-2xl leading-relaxed">
+              To build a long-term career as a Technical SEO Specialist where I can apply my experience in WordPress
+                optimization, technical SEO, and website performance, while continuing to improve my skills, communication, and
+                professional growth.
+            </p>
+          </div>
+          <div class="flex justify-center lg:justify-end mt-12 lg:mt-0">
+            <img 
+              src="images/Christian.jpg" 
+              alt="Christian Keith P. Loreto" 
+              class="w-full max-w-md lg:max-w-lg rounded-2xl shadow-2xl object-cover aspect-[4/5] hero-image"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CORE SKILLS + WORK EXPERIENCE -->
+    <section id="skills" class="section py-20 md:py-32 bg-black">
+      <div class="max-w-7xl mx-auto px-5 md:px-8 lg:px-12">
+        <h2 class="text-5xl md:text-6xl font-bold text-center mb-16">Core Skills</h2>
+
+        <div class="overflow-x-auto mb-24">
+          <table class="w-full min-w-[640px] border border-gray-800 rounded-xl overflow-hidden">
+            <tbody class="divide-y divide-gray-800 text-lg">
+              <tr><td class="py-5 px-8">Technical SEO and website audits</td></tr>
+              <tr><td class="py-5 px-8">WordPress website optimization</td></tr>
+              <tr><td class="py-5 px-8">On-page SEO fixes</td></tr>
+              <tr><td class="py-5 px-8">Website Performance & Speed Optimization</td></tr>
+              <tr><td class="py-5 px-8">HTML, CSS, JavaScript for basic to intermediate use</td></tr>
+              <tr><td class="py-5 px-8">Basic Web development</td></tr>
+              <tr><td class="py-5 px-8">Google Search Console & Google Analytics</td></tr>
+              <tr><td class="py-5 px-8">MS Word, Excel, Google Sheets</td></tr>
+              <tr><td class="py-5 px-8">Basic Computer Troubleshooting</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2 class="text-5xl md:text-6xl font-bold mb-12">Work Experience</h2>
+        <div class="max-w-4xl">
+          <p class="text-2xl font-semibold mb-8">AllWord SEO Digital Marketing Solutions — 3 years</p>
+          <ul class="space-y-6 text-lg text-gray-300 list-disc pl-6 marker:text-gray-500">
+            <li>Managed and optimized multiple WordPress websites, focusing on technical and on-page SEO improvements.</li>
+            <li>Monitored Google Search performance, site speed, indexing, and overall website health.</li>
+            <li>Conducted SEO audits, implemented technical fixes, and published optimized blogs and web pages.</li>
+            <li>Prepared weekly SEO performance reports using Google Sheets and supported off-site SEO through.</li>
+          </ul>
+        </div>
+
+        <!-- Websites Handled -->
+        <div class="mt-24">
+          <h3 class="text-4xl font-bold text-center mb-4">Websites Handled</h3>
+          <p class="text-center text-gray-400 mb-12 text-xl">teenpattistars.io • stars777.org • amerifreight.net • trafficbets.com</p>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="bg-gray-900/50 rounded-2xl p-6 text-center hover:scale-105 transition-transform duration-300">
+              <img src="images/tps.webp" alt="teenpattistars.io" class="mx-auto rounded-lg mb-4"/>
+              <p class="font-medium"></p>
             </div>
+            <!-- Repeat for other 3 sites with real logo URLs when you have them -->
+            <div class="bg-gray-900/50 rounded-2xl p-6 text-center hover:scale-105 transition-transform duration-300">
+              <img src="images/stars777.webp" alt="stars777.org" class="mx-auto rounded-lg mb-4"/>
+              <p class="font-medium"></p>
+            </div>
+            <div class="bg-gray-900/50 rounded-2xl p-6 text-center hover:scale-105 transition-transform duration-300">
+              <img src="images/AmeriFreight.svg" alt="amerifreight.net" class="mx-auto rounded-lg mb-4"/>
+              <p class="font-medium"></p>
+            </div>
+            <div class="bg-gray-900/50 rounded-2xl p-6 text-center hover:scale-105 transition-transform duration-300">
+              <img src="images/trafficbets.webp" alt="trafficbets.com" class="mx-auto rounded-lg mb-4"/>
+              <p class="font-medium"></p>
+            </div>
+          </div>
         </div>
-    </header>
-
-    <section id="objective" class="section animate-slide-up">
-        <div class="container">
-            <h2>Career Objective</h2>
-            <p>To build a long-term career as a Technical SEO Specialist where I can apply my experience in WordPress optimization, technical SEO, and website performance, while continuing to improve my skills, communication, and professional growth.</p>
-        </div>
+      </div>
     </section>
 
-    <section id="skills" class="section animate-fade-in">
-        <div class="container">
-            <h2>Core Skills</h2>
-            <ul>
-                <li>Technical SEO and website audits</li>
-                <li>WordPress website optimization</li>
-                <li>On-page SEO fixes</li>
-                <li>Website Performance & Speed Optimization</li>
-                <li>HTML, CSS, JavaScript for basic to intermediate use</li>
-                <li>Basic Web development</li>
-                <li>Google search console & Google Analytics</li>
-                <li>MS Word, Excel, Google Sheets</li>
-                <li>Basic Computer Troubleshooting</li>
-            </ul>
+    <!-- ACHIEVEMENTS -->
+    <section id="achievements" class="section py-20 md:py-32">
+      <div class="max-w-7xl mx-auto px-5 md:px-8 lg:px-12">
+        <h2 class="text-5xl md:text-6xl font-bold text-center mb-16">My Achievements as SEO Specialist</h2>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <img src="images/1.png" onclick="openModal(this.src)" class="rounded-2xl cursor-pointer hover:scale-105 transition-transform duration-300 shadow-lg" alt="Achievement 1"/>
+          <img src="images/2.png" onclick="openModal(this.src)" class="rounded-2xl cursor-pointer hover:scale-105 transition-transform duration-300 shadow-lg mt-12 md:mt-0" alt="Achievement 2"/>
+          <img src="images/3.png" onclick="openModal(this.src)" class="rounded-2xl cursor-pointer hover:scale-105 transition-transform duration-300 shadow-lg" alt="Achievement 3"/>
+          <img src="images/4.png" onclick="openModal(this.src)" class="rounded-2xl cursor-pointer hover:scale-105 transition-transform duration-300 shadow-lg mt-12 md:mt-0" alt="Achievement 4"/>
         </div>
+      </div>
     </section>
 
-    <section id="experience" class="section animate-slide-up">
-        <div class="container">
-            <h2>Work Experience</h2>
-            <h3>Technical SEO Specialist at Allword (3 years)</h3>
-            <ul>
-                <li>Managed and optimized multiple WordPress websites, focusing on technical and on-page SEO improvements.</li>
-                <li>Monitored Google Search performance, site speed, indexing, and overall website health.</li>
-                <li>Conducted SEO audits, implemented technical fixes, and published optimized blogs and web pages.</li>
-                <li>Prepared weekly SEO performance reports using Google Sheets and supported off-site SEO through backlink creation and page indexing via Google Search Console.</li>
-            </ul>
+    <!-- EDUCATION -->
+    <section id="education" class="section py-20 md:py-32">
+      <div class="max-w-7xl mx-auto px-5 md:px-8 lg:px-12 text-center">
+        <h2 class="text-5xl md:text-6xl font-bold mb-16">Educational Attainment</h2>
+        <div class="inline-block bg-gray-900/50 rounded-3xl p-12 max-w-2xl">
+          <p class="text-4xl font-bold">BS Information Technology</p>
+          <p class="text-3xl mt-4 text-gray-300">Bulacan Agricultural State College</p>
+          <p class="text-2xl mt-8">2015 – 2020</p>
+          <p class="text-3xl font-medium mt-4">Graduated</p>
         </div>
+      </div>
     </section>
 
-    <section id="education" class="section animate-fade-in">
-        <div class="container">
-            <h2>Education</h2>
-            <h3>BS INFORMATION TECHNOLOGY</h3>
-            <p>Bulacan Agricultural State College</p>
-            <p>2015 – 2020 Graduated</p>
-        </div>
-    </section>
+  </main>
 
-    <script src="script.js"></script>
+  <!-- ================= IMAGE MODAL ================= -->
+  <div id="image-modal" class="fixed inset-0 bg-black/95 hidden flex items-center justify-center z-50 p-4">
+    <div class="relative max-w-5xl w-full">
+      <button onclick="closeModal()" class="absolute -top-12 right-0 text-5xl text-white hover:text-gray-300 transition">&times;</button>
+      <img id="modal-img" src="" class="w-full max-h-[85vh] object-contain rounded-2xl shadow-2xl" alt="Full size image"/>
+    </div>
+  </div>
+
+  <!-- Custom JS -->
+  <script src="script.js"></script>
 </body>
+  <!-- ================= FOOTER ================= -->
+  <footer class="bg-black border-t border-gray-800/50 py-16 md:py-20">
+    <div class="max-w-7xl mx-auto px-5 md:px-8 lg:px-12 text-center md:text-left">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-12">
+
+        <!-- Column 1: Name & Title -->
+        <div>
+          <h3 class="text-2xl font-bold mb-4">Christian Keith P. Loreto</h3>
+          <p class="text-gray-400">Technical SEO Specialist</p>
+        </div>
+
+        <!-- Column 2: Contact Info -->
+        <div>
+          <h4 class="text-xl font-semibold mb-5">Contact</h4>
+          <ul class="space-y-4 text-gray-300">
+            <li class="flex items-start gap-3 justify-center md:justify-start">
+              <svg class="w-5 h-5 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+              </svg>
+              <a href="mailto:ianloreto274@gmail.com" class="hover:text-white transition-colors">
+                ianloreto274@gmail.com
+              </a>
+            </li>
+            <li class="flex items-center gap-3 justify-center md:justify-start">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+              </svg>
+              <a href="tel:+639619805064" class="hover:text-white transition-colors">
+                0961-980-5064
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Location -->
+        <div>
+          <h4 class="text-xl font-semibold mb-5">Location</h4>
+          <p class="text-gray-300">
+            Paliwasan<br>San Miguel, Bulacan
+          </p>
+        </div>
+
+        <!-- Column 4: Social / LinkedIn -->
+        <div>
+          <h4 class="text-xl font-semibold mb-5">Connect</h4>
+          <a 
+            href="https://www.linkedin.com/in/christian-keith-loreto-3315222a2/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="inline-flex items-center gap-2 text-gray-300 hover:text-white transition-colors text-lg"
+          >
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+            </svg>
+            LinkedIn
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Bottom copyright -->
+      <div class="mt-16 pt-10 border-t border-gray-800/50 text-center text-gray-500 text-sm">
+        <p>© 2025 Christian Keith P. Loreto. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
 </html>
